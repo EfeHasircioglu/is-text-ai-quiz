@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "text": "My goal with this article is to share my perspectives on the web, as well as introduce many aspects of modern HTML/CSS you may not be familiar with. I’m not trying to make you give up JavaScript, I’m just trying to show you everything that’s possible, leaving it up to you to pick what works best for whatever you’re working on.",
+    "isAi": false
+  },
+  {
+    "id": 2,
+    "text": "In this article, I'll share my take on the web and show you some cool, modern things you can do with HTML and CSS. I'm not saying you should give up on JavaScript—I just want to show you everything that's possible so you can pick the best tool for the job.",
+    "isAi": true
+  },
+  {
+    "id": 3,
+    "text": "Making changes to your API can be tricky. Adding new things, like a new field to a response, is usually fine. There are some systems that will break if they get more fields than they expect, but I think that's bad practice. API users should be built to ignore any extra fields they don't recognize. Good JSON parsers in typed languages usually do this automatically.",
+    "isAi": true
+  },
+  {
+    "id": 4,
+    "text": "World Curling said the decision followed extensive consultation with players, manufacturers and ice experts, as well as a sweep-testing exercise at the Morris Curling Club in Manitoba.",
+    "isAi": false
+  },
+  {
+    "id": 5,
+    "text": "Words and phrases often lose their meaning when you translate them. You can't just convert them word for word from one language to another. Luckily, that's not a problem with dates and times—they're pretty much the same all over the world.",
+    "isAi": true
+  },
+  {
+    "id": 6,
+    "text": "I have found that Rust's strong safety guarantees give me much more confidence when touching the codebase. With that extra confidence I'm much more willing to refactor even critical parts of the app, which has a very positive effect on my productivity, and long-term maintainability.",
+    "isAi": false
+  }
+]
