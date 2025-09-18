@@ -28,5 +28,30 @@
     "id": 6,
     "text": "I have found that Rust's strong safety guarantees give me much more confidence when touching the codebase. With that extra confidence I'm much more willing to refactor even critical parts of the app, which has a very positive effect on my productivity, and long-term maintainability.",
     "isAi": false
+  },
+  {
+    "id": 7,
+    "text": "Burton has an earnest and infectious belief that thrill rides ought to be thrilling, yes, but also interesting. As a Merlin employee, he rose quickly up the ranks and by 2019 he was one of the company’s leading creatives. That year, the CEO, Nick Varney, decided to demolish an old log flume at Thorpe Park, a Merlin resort near the M25 in Surrey, and to put something more attention-grabbing in its place. Burton was given the project to look after. He had just the one instruction from his bosses, to raise up a rollercoaster to a height of 213ft or more at its peak, which would make it Britain’s tallest: something that could be boasted about in future marketing materials. He knew that whatever he created might end up being a referendum on his youthful hiring and his rapid elevation. “I was relatively new,” he said, “and this was their biggest ever investment in a ride.”",
+    "isAi": false
+  },
+  {
+    "id": 8,
+    "text": "Josh Burton truly believes that thrill rides should be interesting as well as thrilling. His talent was quickly recognized at Merlin, and by 2019 he had become one of the company's top creative minds. That's when CEO Nick Varney decided to replace an old log flume at Thorpe Park, a resort in Surrey, with something that would really grab people's attention. Burton was handed the project with one clear directive: build a rollercoaster that was at least 213 feet tall. This would make it Britain's tallest and give them a great marketing story. Burton understood the stakes. 'I was relatively new,' he said, 'and this was their biggest ever investment in a ride.' He knew the project could be a verdict on his quick promotion.",
+    "isAi": true
+  },
+  {
+    "id": 9,
+    "text": "Say hello to ronnagrams and quettameters: International scientists gathered in France voted on Friday for new metric prefixes to express the world's largest and smallest measurements, prompted by an ever-growing amount of data.",
+    "isAi": false
+  },
+  {
+    "id": 10,
+    "text": "The need for these new terms came from all the data we're now collecting. With everything from space exploration to genetics, we're dealing with measurements that are simply off the charts. So, the prefixes ronna and quetta will be used for some of the world's biggest and smallest measurements, making it easier to talk about these massive or microscopic scales.",
+    "isAi": true
+  },
+  {
+    "id": 11,
+    "text": "This is both. I’m gonna level with you: I absolutely hate this problem. But I’m not going to gaslight you and tell you that this is the most important thing to work on worry about, because it probably isn’t!",
+    "isAi": false
   }
 ]
