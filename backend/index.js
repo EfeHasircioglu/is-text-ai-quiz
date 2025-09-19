@@ -14,7 +14,14 @@ app.get("/prompt", (req, res) => {
   res.json({ id: random.id, text: random.text, isAi: random.isAi });
 });
 
-const PORT = 3000;
-app.listen(PORT, () =>
+// that was for local debug
+/* app.listen(PORT, () =>
   console.log(`Server running on http://localhost:${PORT}`)
 );
+ */
+/* these are for vercel compatability */
+module.exports = app;
+
+const serverless = require("serverless-http");
+
+module.exports = serverless(app);
