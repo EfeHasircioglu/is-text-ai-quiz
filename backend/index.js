@@ -20,7 +20,7 @@ export default function handler(req, res) {
     return;
   }
 
-  // Handle GET requests to /prompt
+  // Handle GET requests to /api/prompt
   if (req.method === "GET") {
     const random = data[Math.floor(Math.random() * data.length)];
     res.status(200).json({
