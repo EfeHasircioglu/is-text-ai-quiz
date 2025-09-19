@@ -14,7 +14,7 @@
     }
   ],
   "routes": [
-    { "src": "/prompt", "dest": "/backend/index.js" },
+    { "src": "/api/prompt", "dest": "/backend/index.js" },
     { "src": "/(.*)", "dest": "/frontend/dist/$1" }
   ]
 }

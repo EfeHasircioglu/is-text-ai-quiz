@@ -1,24 +1,36 @@
-import express from "express";
 import fs from "fs";
-import cors from "cors";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const app = express();
-app.use(express.json());
-app.use(cors());
-
+// Load data once when the function is initialized
 const data = JSON.parse(fs.readFileSync(join(__dirname, "data.json"), "utf-8"));
 
-// GET /prompt ile JSON dosyasından rastgele bir yazı döndürüyoruz
-app.get("/prompt", (req, res) => {
-  const random = data[Math.floor(Math.random() * data.length)]; //random, data.json'daki objelerden, yani yazılardan bir tanesi
-  //burada bilgilerin bazılarını client'e gönderiyoruz
-  res.json({ id: random.id, text: random.text, isAi: random.isAi });
-});
+export default function handler(req, res) {
+  // Enable CORS
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
-// For Vercel serverless function
-export default app;
+  // Handle preflight requests
+  if (req.method === "OPTIONS") {
+    res.status(200).end();
+    return;
+  }
+
+  // Handle GET requests to /prompt
+  if (req.method === "GET") {
+    const random = data[Math.floor(Math.random() * data.length)];
+    res.status(200).json({
+      id: random.id,
+      text: random.text,
+      isAi: random.isAi,
+    });
+    return;
+  }
+
+  // Method not allowed
+  res.status(405).json({ error: "Method not allowed" });
+}
