@@ -11,7 +11,7 @@ function App() {
   //doğruluk durumuna göre farklı yazı gösterecek, bunu Modal componentine göndereceğiz
   const [isCorrect, setIsCorrect] = useState(undefined);
   async function getData() {
-    const resp = await fetch("http://localhost:3000/prompt");
+    const resp = await fetch("/api/prompt");
     const { id, text, isAi } = await resp.json();
     setCurrentData({ id, text, isAi });
     console.log(id, text, isAi); //! DEBUG
