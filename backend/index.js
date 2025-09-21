@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 const data = JSON.parse(fs.readFileSync("./data.json", "utf-8"));
 //frontendi express'den sunuyorum
-app.use(express.static(path.join(process.cwd(), "frontend/dist")));
+app.use(express.static(path.join(process.cwd(), ".../frontend/dist")));
 // GET /prompt ile JSON dosyasından rastgele bir yazı döndürüyoruz
 app.get("/prompt", (req, res) => {
   const random = data[Math.floor(Math.random() * data.length)]; //random, data.json'daki objelerden, yani yazılardan bir tanesi
