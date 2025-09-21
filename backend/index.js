@@ -17,7 +17,7 @@ app.get("/prompt", (req, res) => {
 });
 
 //react için catch all handler
-app.get("*", (req, res) => {
+app.get(/.*/, (req, res) => {
   res.sendFile(path.join(process.cwd(), "../frontend/dist", "index.html"));
 });
 const PORT = process.env.PORT || 3000;
