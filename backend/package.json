@@ -1,5 +1,6 @@
 {
   "name": "is-it-ai-backend",
+  "private": false,
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
